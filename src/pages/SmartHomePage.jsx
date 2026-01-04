@@ -9,7 +9,7 @@ import { ChevronRight, Calendar, User, Home } from 'lucide-react';
 const SmartHomePage = () => {
     const smartImages = {
         echo: "https://images.unsplash.com/photo-1543512214-318c7553f230?q=80&w=800",
-        bulb: "https://images.unsplash.com/photo-1550525811-e5869dd03032?q=80&w=800",
+        bulb: "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?q=80&w=800",
         plug: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=800",
         camera: "https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=800",
         sensor: "https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=800"

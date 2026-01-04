@@ -75,14 +75,39 @@ const BuyingGuidesPage = () => {
                 </article>
 
                 <aside className="sidebar-content">
-                    <div style={{ backgroundColor: '#f8f9fa', padding: '1.5rem', borderRadius: '12px', marginBottom: '2rem' }}>
-                        <h4 style={{ color: '#0D1B2A', display: 'flex', alignItems: 'center', gap: '8px' }}><BookOpen size={20} /> Guide Checklist</h4>
-                        <ul style={{ fontSize: '14px', marginTop: '10px', display: 'flex', flexDirection: 'column', gap: '8px', paddingLeft: '1.2rem' }}>
-                            <li>Set a strict budget</li>
-                            <li>Check the bands (Sub-6 vs mmWave)</li>
-                            <li>Test the in-hand feel</li>
-                            <li>Verify service center proximity</li>
-                        </ul>
+                    <div style={{ backgroundColor: '#fff', border: '1px solid #e0e0e0', padding: '0', borderRadius: '16px', marginBottom: '2rem', overflow: 'hidden', boxShadow: '0 4px 12px rgba(0,0,0,0.05)' }}>
+                        <div style={{ backgroundColor: '#0D1B2A', color: '#fff', padding: '1.5rem', display: 'flex', alignItems: 'center', gap: '10px' }}>
+                            <BookOpen size={24} color="#4ADE80" />
+                            <h4 style={{ margin: 0, fontSize: '1.2rem' }}>Quick Action Plan</h4>
+                        </div>
+                        <div style={{ padding: '1.5rem' }}>
+                            <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
+                                {[
+                                    { step: 1, text: "Set a strict maximum budget" },
+                                    { step: 2, text: "Prioritize Screen vs. Camera" },
+                                    { step: 3, text: "Check service center locations" },
+                                    { step: 4, text: "Read long-term user reviews" }
+                                ].map((item, i) => (
+                                    <li key={i} style={{ display: 'flex', gap: '12px', alignItems: 'flex-start' }}>
+                                        <span style={{
+                                            backgroundColor: '#E8F5E9',
+                                            color: '#2E7D32',
+                                            width: '24px',
+                                            height: '24px',
+                                            borderRadius: '50%',
+                                            display: 'flex',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            fontSize: '12px',
+                                            fontWeight: '800',
+                                            flexShrink: 0,
+                                            marginTop: '2px'
+                                        }}>{item.step}</span>
+                                        <span style={{ fontSize: '15px', color: '#333', lineHeight: '1.4', fontWeight: '500' }}>{item.text}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
                     </div>
                     <AdSlot type="skyscraper" />
                 </aside>

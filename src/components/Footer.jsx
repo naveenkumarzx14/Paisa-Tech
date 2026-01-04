@@ -20,10 +20,11 @@ const Footer = () => {
                     <div>
                         <h4 style={{ marginBottom: '1.5rem' }}>Quick Links</h4>
                         <ul style={{ display: 'flex', flexDirection: 'column', gap: '0.8rem', fontSize: '14px' }}>
-                            <li><a href="/smartphones" style={{ opacity: 0.8 }}>Smartphones</a></li>
-                            <li><a href="/laptops" style={{ opacity: 0.8 }}>Laptops</a></li>
-                            <li><a href="/guides" style={{ opacity: 0.8 }}>Buying Guides</a></li>
-                            <li><a href="/reviews" style={{ opacity: 0.8 }}>Expert Reviews</a></li>
+                            <li><a href="/smartphones" style={{ opacity: 0.8, textDecoration: 'none', color: 'inherit' }}>Smartphones</a></li>
+                            <li><a href="/laptops" style={{ opacity: 0.8, textDecoration: 'none', color: 'inherit' }}>Laptops</a></li>
+                            <li><a href="/audio" style={{ opacity: 0.8, textDecoration: 'none', color: 'inherit' }}>Audio Reviews</a></li>
+                            <li><a href="/smart-home" style={{ opacity: 0.8, textDecoration: 'none', color: 'inherit' }}>Smart Home</a></li>
+                            <li><a href="/guides" style={{ opacity: 0.8, textDecoration: 'none', color: 'inherit' }}>Buying Guides</a></li>
                         </ul>
                     </div>
 

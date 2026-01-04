@@ -6,7 +6,7 @@ import LaptopPage from './pages/LaptopPage';
 import AudioPage from './pages/AudioPage';
 import SmartHomePage from './pages/SmartHomePage';
 import BuyingGuidesPage from './pages/BuyingGuidesPage';
-import { AboutUs, PrivacyPolicy, ContactUs } from './pages/LegalPages';
+import { AboutUs, PrivacyPolicy, ContactUs, TermsOfService } from './pages/LegalPages';
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/terms" element={<TermsOfService />} />
         {/* Placeholder for other routes */}
         <Route path="/smartphones" element={<ArticlePage />} />
         <Route path="/laptops" element={<LaptopPage />} />
