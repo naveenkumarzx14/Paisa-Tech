@@ -10,6 +10,8 @@ import redmiImg from '../assets/redmi_note.png';
 import pocoImg from '../assets/poco_m7.png';
 import samsungImg from '../assets/samsung_m17.png';
 import realmeImg from '../assets/realme_p4x.png';
+import authorImg from '../assets/author.jpg';
+import AuthorBox from '../components/AuthorBox';
 
 const ArticlePage = () => {
     return (
@@ -31,8 +33,11 @@ const ArticlePage = () => {
                     </h1>
 
                     <div style={{ display: 'flex', alignItems: 'center', gap: '20px', fontSize: '14px', color: '#666', marginBottom: '2rem', paddingBottom: '1rem', borderBottom: '1px solid #eee' }}>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                            <User size={16} /> By <strong>Paisa Tech Editorial</strong>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                            <div style={{ width: '32px', height: '32px', borderRadius: '50%', overflow: 'hidden', border: '1px solid #2E7D32' }}>
+                                <img src={authorImg} alt="Author" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                            </div>
+                            By <strong>Naveen Kumar</strong>
                         </div>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
                             <Calendar size={16} /> Updated: January 4, 2026
@@ -164,6 +169,8 @@ const ArticlePage = () => {
                         <h2>The Verdict: Which one should you buy?</h2>
                         <p>If you're looking for the absolute best overall experience, the <strong>Moto G67 Power</strong> wins our "Paisa Vasool" crown for Jan 2026. Its combination of clean software, insane battery life, and capable performance makes it the smartest buy for most Indians.</p>
                         <p>However, if your primary goal is either <strong>gaming</strong> or <strong>photography</strong>, Poco and Redmi respectively offer specialized hardware that outshines the rest of the pack in those specific niches.</p>
+
+                        <AuthorBox />
                     </div>
                 </article>
 

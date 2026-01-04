@@ -3,6 +3,8 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import AdSlot from '../components/AdSlot';
 import { ChevronRight, Calendar, User, BookOpen, CheckCircle } from 'lucide-react';
+import authorImg from '../assets/author.jpg';
+import AuthorBox from '../components/AuthorBox';
 
 const BuyingGuidesPage = () => {
     return (
@@ -22,8 +24,11 @@ const BuyingGuidesPage = () => {
                     </h1>
 
                     <div style={{ display: 'flex', alignItems: 'center', gap: '20px', fontSize: '14px', color: '#666', marginBottom: '2rem', paddingBottom: '1rem', borderBottom: '1px solid #eee' }}>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-                            <User size={16} /> By <strong>Paisa Tech Editorial</strong>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                            <div style={{ width: '32px', height: '32px', borderRadius: '50%', overflow: 'hidden', border: '1px solid #2E7D32' }}>
+                                <img src={authorImg} alt="Author" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                            </div>
+                            By <strong>Naveen Kumar</strong>
                         </div>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
                             <Calendar size={16} /> Updated: January 4, 2026
@@ -71,6 +76,8 @@ const BuyingGuidesPage = () => {
                             <h3 style={{ color: '#2E7D32', marginBottom: '0.5rem' }}>Pro Tip: The Refurbished Market</h3>
                             <p>If you're on a tight budget, a 2-year-old flagship often offers better value than a brand-new budget phone. Just ensure the battery health is above 90%!</p>
                         </div>
+
+                        <AuthorBox />
                     </div>
                 </article>
 

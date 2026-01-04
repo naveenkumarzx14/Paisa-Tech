@@ -2,6 +2,7 @@ import React from 'react';
 import emailjs from '@emailjs/browser';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import AuthorBox from '../components/AuthorBox';
 
 const LegalPage = ({ title, children }) => {
     return (
@@ -23,6 +24,7 @@ export const AboutUs = () => (
         <p>Welcome to <strong>Paisa Tech</strong> (www.paisatech.in) — India’s most trusted destination for technology reviews, buying guides, and value-focused tech journalism.</p>
         <p style={{ marginTop: '1.5rem' }}>Our mission is simple: To help the Indian consumer find the absolute best "Paisa Vasool" value in a crowded market. Whether you're hunting for a 5G smartphone that won't break the bank, a laptop for your first job, or the perfect pair of noise-canceling earbuds, we provide the deep-dive testing and real-world insights you need.</p>
         <p style={{ marginTop: '1.5rem' }}>At Paisa Tech, we believe tech should be accessible, reliable, and above all, worth every rupee you spend. Our editorial team consists of veteran tech enthusiasts who live and breathe gadgets, ensuring every review is backed by hours of hands-on usage.</p>
+        <AuthorBox />
     </LegalPage>
 );
 
